@@ -1,6 +1,5 @@
-html {height: 100%;}
-body {height: 100%;}
-header {z-index: 1000;}
+body .home {height: 100%; margin:0; padding:0;}
+#header {z-index: 10; width:100%; position:absolute;}
 
 /*Navbar*/
 .header {width: 100%;}
@@ -20,9 +19,9 @@ ul .dropdown-menu li a {-webkit-transition: all 0.1s ease-out;-moz-transition: a
 ul .dropdown-menu li a:hover {-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;transition: all 0.2s ease-out;border-bottom: none;}
 
 /*Section banner*/
-
+.banner{position: relative; background-image:url(img/header.jpg); min-height:100vh; background-size: cover; background-position: center; padding: 220px 0 200px;}
 
 /*Image*/
-.img-fluid{width: 430px;height: auto;}
+
 
 
