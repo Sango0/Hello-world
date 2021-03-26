@@ -1,4 +1,4 @@
-var nav= document.querySelector('nav');
+var nav= document.querySelector('.navbar');
 
 window.addEventListener('scroll', function (){
     if (window.pageYOffset > 100) {
