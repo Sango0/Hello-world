@@ -5,29 +5,22 @@
 **********************/
 
 .navbar-nav a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-transform: uppercase; font-weight: bold; margin:0 8px; padding: 8px;   position: relative; text-decoration: none;}
-.bg-dark{background-color:#fe766a!important;}
 
+.navbar-nav a::after{content: ""; position:absolute; width:45%; top:100%; left:0; background: #BEEF9E; transition: transform 0.5s; transform: scaleX(0); transform-origin: right; border-bottom: 1px solid #BEEF9E;}
+.navbar-nav a:hover::after{transform: scale(1); transform-origin: left;}
+
+.bg-dark{background-color:#F16669!important;}
 .navbar-light .navbar-brand {color: #fff; font-size: 22px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px;}
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {color: #fff;}
-.navbar-light .navbar-nav .nav-link {color: #fff; }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #BEEF9E;  border-bottom: 1px solid #d2fcb7;}
+.navbar-light .navbar-nav .nav-link {color: #fff;}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #BEEF9E;}
 .w-100 {height: 100vh;}
-.navbar-light .navbar-nav .nav-link:active{border-bottom: 1px solid #BEEF9E; color:#BEEF9E;}
+.navbar-light .navbar-nav .nav-link:active{border-bottom: 1px solid #BEEF9E;}
 
 .navbar-nav {text-align: center;}
-
-.nav-link {
-	padding: .2rem 1rem;
-}
-.nav-link.active, .nav-link:focus {
-	color: #fff;
-}
-.navbar-toggler {
-	padding: 1px 5px;
-	font-size: 18px;
-	line-height: 0.3;
-	background: #fff;
-}
+.nav-link {padding: .2rem 1rem;}
+.nav-link.active, .nav-link:focus {color: #fff;}
+.navbar-toggler {padding: 1px 5px;font-size: 18px;line-height: 0.3;background: #fff;}
 
 
 @media only screen and (max-width: 767px) {
@@ -46,5 +39,13 @@
 *****Banner Image*****
 **********************
 **********************/
-.banner{position:relative; background-image:url(../img/header.jpg); min-height:100vh; width: 100%; background-size:cover; background-position: center; padding: 220px 0 200px;}
+.banner{position:relative; background-image:url(../img/header2.jpg); min-height:100vh; width: 100%; background-size:cover; background-position: center; padding: 220px 0 200px;}
 
+/*********************
+**********************
+*******Section********
+**********************
+**********************/
+
+.section{padding:70px 0;}
+.description{font-size: 1.5em; color:#999;}
