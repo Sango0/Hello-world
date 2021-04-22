@@ -1,11 +1,26 @@
+/*@font-face {
+	font-family: 'VarelaRound';
+	src: url('../fonts/VarelaRound.ttf');
+	font-weight: normal;
+	font-style: normal;
+  }*/
+
+body{font-family: 'Varela Round', sans-serif;}
+p{font-size:12px;}
+h1{font-size: 15px; font-weight:bold;}
+h2{font-size: 14px;}
+
+/* HOME
+=========== */
+
 /*********************
 **********************
 *****Navbar***********
 **********************
 **********************/
 
-.navbar-nav a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-transform: uppercase; font-weight: bold; margin:0 8px; padding: 8px;   position: relative; text-decoration: none;}
-
+.navbar-nav a {font-family: 'Varela Round', sans-serif; font-size: 12px; text-transform: uppercase;  margin:0 8px; padding: 8px;   position: relative; text-decoration: none;}
+.navbar{background-color: #808cc6;}
 .navbar-nav a::after{content: ""; position:absolute; width:45%; top:100%; left:0; background: #BEEF9E; transition: transform 0.5s; transform: scaleX(0); transform-origin: right; border-bottom: 1px solid #BEEF9E;}
 .navbar-nav a:hover::after{transform: scale(1); transform-origin: left;}
 
@@ -24,14 +39,8 @@
 
 
 @media only screen and (max-width: 767px) {
-	.navbar-nav.ml-auto {
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.navbar-nav a {
-		font-size: 14px;
-		font-weight: normal;
-	}
-}
+	.navbar-nav.ml-auto {background: rgba(0, 0, 0, 0.5);}
+	.navbar-nav a {font-size: 14px;font-weight: normal;}}
 
 
 /*********************
@@ -39,7 +48,7 @@
 *****Banner Image*****
 **********************
 **********************/
-.banner{position:relative; background-image:url(../img/header2.jpg); min-height:100vh; width: 100%; background-size:cover; background-position: center; padding: 220px 0 200px;}
+.banner{position:relative; background-image:url(../img/header.jpg); min-height:100vh; width: 100%; background-size:cover; background-position: center; padding: 220px 0 200px;}
 
 /*********************
 **********************
@@ -49,3 +58,97 @@
 
 .section{padding:70px 0;}
 .description{font-size: 1.5em; color:#999;}
+
+
+/* OVER CSS
+=========== */
+
+/*********************
+**********************
+*******ABOUT ME*******
+**********************
+**********************/
+
+.about_section{margin: 120px 0px 120px; }
+.about_section .row {align-items: center;}
+.about_img-box img {width: 70%;}
+.about_detail-box p {margin: 24px 0;}
+.about_stuk{margin: 0 !important;}
+.title{font-weight: bold;}
+.text_me{padding: 0px 120px 0px 0px;}
+
+
+/*Triangle*/
+
+.triangle-right {width: 0; height: 0px; border-top: 9px solid transparent; border-left: 13px solid #808cc6; border-bottom: 9px solid transparent; margin-bottom: 20px;}
+
+/*Button */
+
+.call_to-btn:hover,
+.sub_call_to-btn:hover {color: #fff;-webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);-moz-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.17);}
+.sub_call_to-btn {display: inline-block; padding: 10px 28px; background-color: #F16669; color: #fff;display: flex; justify-content: center;align-items: center;}
+
+/*********************
+**********************
+*****Vaardigheden*****
+**********************
+**********************/
+
+.ftco-section {
+	padding: 7em 0;
+	position: relative; }
+	@media (max-width: 767.98px) {
+	  .ftco-section {padding: 6em 0; } }
+
+
+.progress-wrap {width: 100%; margin-bottom: 30px; }
+			  
+			  .progress {
+				height: 10px;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				background: #d8d8d8;
+				overflow: visible; }
+			  
+			  .progress-bar {
+				background: #808cc6;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				font-size: 12px;
+				line-height: 1.2;
+				color: #000000;
+				font-weight: 700;
+				position: relative;
+				overflow: visible;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				-ms-border-radius: 2px;
+				border-radius: 2px; }
+				.progress-bar:after {
+				  position: absolute;
+				  top: -2px;
+				  right: 0;
+				  width: 34px;
+				  height: 34px;
+				  content: '';
+				  background: #ffbd39;
+				  -webkit-border-radius: 2px;
+				  -moz-border-radius: 2px;
+				  -ms-border-radius: 2px;
+				  border-radius: 2px;
+				  opacity: 0; }
+				.progress-bar span {
+				  position: absolute;
+				  top: -38px;
+				  right: 0;
+				  font-size: 12px;
+				  font-weight: 400;
+				  color: #16166; }
+			  
+			  
+			  @media (min-width: 992px) {
+				.margin-top {
+				  margin-top: -70px;
+				  padding-top: 10em !important; } }
+
+
