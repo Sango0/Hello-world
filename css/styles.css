@@ -18,8 +18,11 @@ h2{font-size: 14px;}
 *****Navbar***********
 **********************
 **********************/
+li{list-style:none;}
+a{color:#fff;}
+a:hover{color:#BEEF9E!important;}
 
-.navbar-nav a {font-family: 'Varela Round', sans-serif; font-size: 12px; text-transform: uppercase;  margin:0 8px; padding: 8px;   position: relative; text-decoration: none;}
+.navbar-nav a {font-family: 'Varela Round', sans-serif; font-size: 12px; text-transform: uppercase;  margin:0 8px;  position: relative; text-decoration: none;}
 .navbar{background-color: #808cc6;}
 .navbar-nav a::after{content: ""; position:absolute; width:45%; top:100%; left:0; background: #BEEF9E; transition: transform 0.5s; transform: scaleX(0); transform-origin: right; border-bottom: 1px solid #BEEF9E;}
 .navbar-nav a:hover::after{transform: scale(1); transform-origin: left;}
@@ -41,6 +44,71 @@ h2{font-size: 14px;}
 @media only screen and (max-width: 767px) {
 	.navbar-nav.ml-auto {background: rgba(0, 0, 0, 0.5);}
 	.navbar-nav a {font-size: 14px;font-weight: normal;}}
+
+/*********************
+**********************
+*****DROPDOWN*********
+**********************
+**********************/
+	.dropdown ul {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: calc(100% + 30px);
+		margin: 0;
+		padding: 10px 0;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		background: #fff;
+		box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+		transition: 0.3s;
+		border-top: 2px solid #F16669;
+	  }
+	  
+	  .dropdown ul li {
+		min-width: 130px;
+	  }
+	  
+	 .dropdown ul a {
+		font-size: 14px;
+		text-transform: none;
+		font-weight: 500;
+		color: #282828;
+	  }
+	  
+	 .dropdown ul a i {
+		font-size: 12px;
+	  }
+	  
+	  
+	  .dropdown:hover > ul {
+		opacity: 1;
+		top: 150%;
+		visibility: visible;
+	  }
+	  
+	  .dropdown .dropdown ul {
+		top: 0;
+		left: calc(100% - 30px);
+		visibility: hidden;
+	  }
+	  
+	  .dropdown .dropdown:hover > ul {
+		opacity: 1;
+		top: 0;
+		left: 100%;
+		visibility: visible;
+	  }
+	  
+	  @media (max-width: 1366px) {
+		.dropdown .dropdown ul {
+		  left: -90%;
+		}
+		.dropdown .dropdown:hover > ul {
+		  left: -100%;
+		}
+	  }
 
 
 /*********************
@@ -102,23 +170,8 @@ h2{font-size: 14px;}
 
 
 .progress-wrap {width: 100%; margin-bottom: 30px; }
-			  
-			  .progress {
-				height: 10px;
-				-webkit-box-shadow: none;
-				box-shadow: none;
-				background: #d8d8d8;
-				overflow: visible; }
-			  
-			  .progress-bar {
-				background: #808cc6;
-				-webkit-box-shadow: none;
-				box-shadow: none;
-				font-size: 12px;
-				line-height: 1.2;
-				color: #000000;
-				font-weight: 700;
-				position: relative;
+.progress {height: 10px;-webkit-box-shadow: none;box-shadow: none;background: #d8d8d8;overflow: visible; }
+.progress-bar {background: #808cc6;-webkit-box-shadow: none;box-shadow: none;font-size: 12px;line-height: 1.2;color: #000000;font-weight: 700;position: relative;
 				overflow: visible;
 				-webkit-border-radius: 2px;
 				-moz-border-radius: 2px;
@@ -143,7 +196,7 @@ h2{font-size: 14px;}
 				  right: 0;
 				  font-size: 12px;
 				  font-weight: 400;
-				  color: #16166; }
+				  color: #F16166; }
 			  
 			  
 			  @media (min-width: 992px) {
@@ -151,4 +204,39 @@ h2{font-size: 14px;}
 				  margin-top: -70px;
 				  padding-top: 10em !important; } }
 
+ /* Project
+ =========== */
 
+/*********************
+**********************
+*****Cases***********
+**********************
+**********************/
+
+.space-md {
+    padding-top: 90px;
+    padding-bottom: 90px;}
+
+.headline {
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.headline-content {
+    display: block;
+    position: relative;
+}
+
+.headline-content .headline-title {
+    font-weight: 600;
+}
+
+.headline-subtitle {
+    font-size: 12px;
+	font-style: italic;
+	color: #F16166;
+}
+
+.case_title{font-weight:bold; font-size:20px;}
+.img-fluid-poster{}
