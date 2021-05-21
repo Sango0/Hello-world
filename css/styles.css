@@ -1,114 +1,88 @@
-/*@font-face {
-	font-family: 'VarelaRound';
-	src: url('../fonts/VarelaRound.ttf');
-	font-weight: normal;
-	font-style: normal;
-  }*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
-body{font-family: 'Varela Round', sans-serif;}
+body{font-family: 'Poppins', sans-serif;}
 p{font-size:12px;}
-h1{font-size: 15px; font-weight:bold;}
+h1{font-size: 15px;}
 h2{font-size: 14px;}
+
 
 /* HOME
 =========== */
+/*********************
+**********************
+*****HEADER***********
+**********************
+**********************/
+#header {height: 70px; transition: all 0.5s; transition: all 0.5s; padding: 10px 0; background: #808cc6; z-index: 997;}
+#header.header-scrolled {box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);}
+#header .logo h1 {font-family:'Poppins', sans-serif; font-size: 20px; margin: 0; padding: 10px 0; line-height: 1; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; font-weight: bold;}
+#header .logo h1 a, #header .logo h1 a:hover {color: #ffffff; text-decoration: none;}
+#header .logo img {padding: 0; margin: 0; max-height: 40px;}
+
 
 /*********************
 **********************
 *****Navbar***********
 **********************
 **********************/
-li{list-style:none;}
-a{color:#fff;}
-a:hover{color:#BEEF9E!important;}
 
-.navbar-nav a {font-family: 'Varela Round', sans-serif; font-size: 12px; text-transform: uppercase;  margin:0 8px;  position: relative; text-decoration: none;}
-.navbar{background-color: #808cc6;}
-.navbar-nav a::after{content: ""; position:absolute; width:45%; top:100%; left:0; background: #BEEF9E; transition: transform 0.5s; transform: scaleX(0); transform-origin: right; border-bottom: 1px solid #BEEF9E;}
-.navbar-nav a:hover::after{transform: scale(1); transform-origin: left;}
-
-.bg-dark{background-color:#F16669!important;}
-.navbar-light .navbar-brand {color: #fff; font-size: 22px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px;}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {color: #fff;}
-.navbar-light .navbar-nav .nav-link {color: #fff;}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #BEEF9E;}
-.w-100 {height: 100vh;}
-.navbar-light .navbar-nav .nav-link:active{border-bottom: 1px solid #BEEF9E;}
-
-.navbar-nav {text-align: center;}
-.nav-link {padding: .2rem 1rem;}
-.nav-link.active, .nav-link:focus {color: #fff;}
-.navbar-toggler {padding: 1px 5px;font-size: 18px;line-height: 0.3;background: #fff;}
+.nav-menu, .nav-menu * {margin: 0; padding: 0; list-style: none;}
+.nav-menu > ul > li {position: relative; white-space: nowrap; float: left;}
+.nav-menu a {display: block; position: relative; color: #ffffff; padding: 12px 15px; transition: 0.3s;font-size: 14px; font-family: 'Poppins', sans-serif;}
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {color: #BEEF9E;text-decoration: none;}
+.nav-menu .dropdown ul {display: block; position: absolute; left: 0; top: 100%; z-index: 99; opacity: 0;visibility: hidden; padding: 10px 0; background: #fff; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); transition: ease all 0.3s; border-top: 2px solid #F16669;}
+.nav-menu .dropdown:hover > ul {opacity: 1; top: 100%; visibility: visible;}
+.nav-menu .dropdown li {min-width: 180px; position: relative;}
+.nav-menu .dropdown ul a {padding: 10px 20px; font-size: 14px; font-weight: 500; text-transform: none; color: #3a3a3a;}
+.nav-menu .dropdown ul a:hover, .nav-menu .dropdown ul .active > a, .nav-menu .dropdown ul li:hover > a {color: #F16669;}
+.nav-menu .dropdown > a:after {font-family: 'Poppins', sans-serif; padding-left: 5px;}
+.nav-menu .dropdown .dropdown ul {top: 0;left: 100%;}
+.nav-menu .dropdown .dropdown:hover > ul {opacity: 1; top: 0;}
+.nav-menu .dropdown .dropdown > a {padding-right: 35px;}
+.nav-menu .dropdown .dropdown > a:after {font-family: 'Poppins', sans-serif; position: absolute; right: 15px;}
+.bg-dark{background-color: #F16669!important;}
 
 
-@media only screen and (max-width: 767px) {
-	.navbar-nav.ml-auto {background: rgba(0, 0, 0, 0.5);}
-	.navbar-nav a {font-size: 14px;font-weight: normal;}}
-
+ 
 /*********************
 **********************
-*****DROPDOWN*********
+*****Mobile-Nav*******
 **********************
-**********************/
-	.dropdown ul {
-		display: block;
-		position: absolute;
-		left: 0;
-		top: calc(100% + 30px);
-		margin: 0;
-		padding: 10px 0;
-		z-index: 99;
-		opacity: 0;
-		visibility: hidden;
-		background: #fff;
-		box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-		transition: 0.3s;
-		border-top: 2px solid #F16669;
-	  }
+**********************/  
+
+@media only screen and (max-width: 767px) {
+	.nav-menu.ml-auto {background: rgba(0, 0, 0, 0.5);}
+	.nav-menu a {font-size: 14px;font-weight: normal;}}
+
+.navbar-toggler {padding: 1px 5px;font-size: 18px;line-height: 0.3;background: #fff;}	
+@media (max-width: 1366px) {
+	.dropdown .dropdown ul {
+	  left: -90%;
+	}
+	.dropdown .dropdown:hover > ul {
+	  left: -100%;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	  
-	  .dropdown ul li {
-		min-width: 130px;
-	  }
+
 	  
-	 .dropdown ul a {
-		font-size: 14px;
-		text-transform: none;
-		font-weight: 500;
-		color: #282828;
-	  }
-	  
-	 .dropdown ul a i {
-		font-size: 12px;
-	  }
+	
 	  
 	  
-	  .dropdown:hover > ul {
-		opacity: 1;
-		top: 150%;
-		visibility: visible;
-	  }
-	  
-	  .dropdown .dropdown ul {
-		top: 0;
-		left: calc(100% - 30px);
-		visibility: hidden;
-	  }
-	  
-	  .dropdown .dropdown:hover > ul {
-		opacity: 1;
-		top: 0;
-		left: 100%;
-		visibility: visible;
-	  }
-	  
-	  @media (max-width: 1366px) {
-		.dropdown .dropdown ul {
-		  left: -90%;
-		}
-		.dropdown .dropdown:hover > ul {
-		  left: -100%;
-		}
-	  }
+
 
 
 /*********************
@@ -116,7 +90,7 @@ a:hover{color:#BEEF9E!important;}
 *****Banner Image*****
 **********************
 **********************/
-.banner{position:relative; background-image:url(../img/header.jpg); min-height:100vh; width: 100%; background-size:cover; background-position: center; padding: 220px 0 200px;}
+.banner{position:relative; background-color:#808cc6;  background-image:url(../img/header.png.png); min-height:100vh; width: 100%; background-size:contain; background-repeat: no-repeat; background-position: center; padding: 220px 0 200px;}
 
 /*********************
 **********************
@@ -239,4 +213,3 @@ a:hover{color:#BEEF9E!important;}
 }
 
 .case_title{font-weight:bold; font-size:20px;}
-.img-fluid-poster{}
