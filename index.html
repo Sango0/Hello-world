@@ -8,9 +8,9 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Links -->
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/528e91446a.js" crossorigin="anonymous"></script>
@@ -30,10 +30,10 @@
 				<nav class="nav-menu ml-auto float-right d-none d-lg-block" id="navbarSupportedContent">
 					<ul>
 					<li class="active"><a href="#header">Home</a></li>
-					<li><a href="#about">Over</a></li>
-					<li class="dropdown"><a href="project.html">Projecten <i class="fas fa-angle-down"></i></a>
+					<li><a href="over.html">Over</a></li>
+					<li class="dropdown"><a href="projecten.html">Projecten <i class="fas fa-angle-down"></i></a>
 						<ul>
-						<li><a href="#">Drop Down 1</a></li>
+						<li><a href="case1.html">Klasse</a></li>
 						<li><a href="#">Drop Down 1</a></li>
 						<li><a href="#">Drop Down 1</a></li>
 						</ul>
@@ -45,40 +45,49 @@
 		</nav>	
 	</header>
 
-	<!-- Banner -->
+  <!-- Banner -->
 <div class="slider_area">
-    <div class="single_slider  d-flex align-items-center slider_bg_1 justify-content-center align-items-center">
-         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9">
-                    <div class="slider_text">
-                         <h3>Welkom! Ik ben opzoek  <br>naar een leuke stageplek <br>
-						<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-						<div id="notificationBar"></div>
-                    </div>
-                </div>
-            	<div class="my_img d-none d-lg-block">
-					<img src="img/header.png" alt="header" class="img_header">
-				</div>
+  <div class="single_slider  d-flex align-items-center slider_bg_1 justify-content-center align-items-center">
+       <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-9">
+                  <div class="slider_text">
+                       <h3>Welkom! Ik ben opzoek  <br>naar een leuke stageplek <br>
+                        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+                        <div id="notificationBar"></div>
+                  </div>
+              </div>
+            <div class="my_img d-none d-lg-block">
+              <img src="assets/img/header.png" alt="header" class="img_header">
             </div>
-        </div>
-    </div>
+            <a href="#beschrijving"><div class="icon-scroll"></div></a>
+
+          </div>
+      </div>
+  </div>
 </div>
-    <!-- slider_area_end -->
-	
+<!-- Slider end -->
 
-<!--- banner section --->
-<div class="banner d-flex w-100 justify-content-center align-items-center">
-</div>   
+<!--- Beschrijving --->
+<section class="beschrijving" id="beschrijving">
+  <div class="container">
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+          <h2>Leuk dat je kijkt! Ik ben Dannilla Koenen. Een <strong class="p-1">Visueel designer</strong> die ook een technische kant heeft. </h2>
+          <p><a href="over.html" class="btn btn-primary mt-3 py-3 px-5">Lees meer</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
- 
 <!--- Services --->
 <section class="features_area">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 text-center">
 				<div class="main_title">
-					<h2>Mijn services</h2>
+					<h4>mijn services</h4>
+          <h2>Wat ik leuk vind om te doen</h2>
 				</div>
 			</div>
 		</div>
@@ -118,83 +127,16 @@
 
 
 <!--- Portfolio --->
-<main id="main">
-    <div class="site-section site-portfolio">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p class="mb-0">Bekijk hier mijn gemaakten projecten! </p>
-          </div>
-          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
-            <div id="filters" class="filters"></div>
-            <li class="filter-button" data-filter="all">All</li>
-            <li class="filter-button" data-filter="hdpe">HDPE Pipes</li>
-            <li class="filter-button" data-filter="sprinkle">Sprinkle Pipes</li>
-            <li class="filter-button" data-filter="spray">Spray Nozzle</li>
-            <li class="filter-button" data-filter="irrigation">Irrigation Pipes</li>
-            </div>
-          </div>
-        </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item col-sm-6 col-md-4 col-lg-4 mb-4  filter hdpe">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Beautiful by Laura</h3>
-                <span>Design</span>
-              </div>
-              <img class="img-fluid" src="img/foto1.png">
-            </a>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4 filter sprinkle">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Search4travel</h3>
-                <span>Design</span>
-              </div>
-              <img class="img-fluid" src="img/foto2.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4 filter hdpe">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Antidote</h3>
-                <span>Design</span>
-              </div>
-              <img class="img-fluid" src="img/foto3.jpg">
-            </a>
-          </div>
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4 filter irrigation">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Nike Shoe</h3>
-                <span>Design</span>
-              </div>
-              <img class="img-fluid" src="img/img_4.jpg">
-            </a>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4 filter spray">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Kitchen Sink</h3>
-                <span>Photography</span>
-              </div>
-              <img class="img-fluid" src="img/img_5.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4 filter irrigation">
-            <a href="work-single.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Amazon</h3>
-                <span>brandingn</span>
-              </div>
-              <img class="img-fluid" src="img/img_6.jpg">
-            </a>
-          </div>
-    	</div>
-    </div>
-</div>
 
+
+<!--footer-->
+<section class="footer-basic">
+	<footer>
+		<div class="social"><a href="https://www.instagram.com/ichiikkaa/" target="_blank"><i class="fab fa-instagram"></i><a href="https://www.linkedin.com/in/dannilla-koenen-a778a0106/" target="_blank"><i class="fab fa-linkedin-in"></i><a href="https://www.youtube.com/channel/UC4QSVBVSpBFfL3xjVBPirVQ" target="_blank"><i class="fab fa-youtube"></i></a></div>
+		<p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Snowflowerr</p>
+	</footer>
+</section>
+<!--footer end -->
 
 
  <!--- Javascript bootstrap link    --->
@@ -207,9 +149,9 @@
 
 
   <!--- Javascript   --->
-	<script type="text/javascript" src="js/headline.js"></script>
-	<script type="text/javascript" src="js/navbar.js"></script>
-  <script type="text/javascript" src="js/portfoliogallery.js"></script>
+	<script type="text/javascript" src="assets/js/headline.js"></script>
+	<script type="text/javascript" src="assets/js/navbar.js"></script>
+ 
 	
 
 

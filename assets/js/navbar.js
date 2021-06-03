@@ -1,7 +1,7 @@
 var nav= document.querySelector('.navbar');
 
 window.addEventListener('scroll', function (){
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 50) {
         nav.classList.add('bg-dark', 'shadow');
     }
 
