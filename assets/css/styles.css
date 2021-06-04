@@ -273,10 +273,9 @@ a.work{text-decoration: none;}
 .nk-pagination.nk-pagination-left{text-align:left;}
 .nk-pagination.nk-pagination-right{text-align:right;}
 
-.ontwerpvraag-quote{background-color: #F16669; max-width: 100%; padding: 7% 20%;}
+.ontwerpvraag-quote{background-color: #F16669; max-width: 100%; padding: 7% 26%;}
 .ontwerpvraag-quote h5{text-align: center; color:#fff; font-style: italic;}
 .ontwerpvraag-quote h2{text-align: center; color: #fff;}
 
-.case{padding: 7rem 0;}
-.case img{width:555px; height: 474px;}
-.case .text{padding-top: 14%;}
+.cases {position: relative;padding-top: 3rem;padding-bottom: 3rem;}
+.section-lg {padding-top: 8rem;padding-bottom: 8rem;}
