@@ -16,8 +16,8 @@ h6 {font-family: 'Poppins', sans-serif; color: #F16669; }
 .btn:hover{background-color: #808cc6; border-color: #808cc6;} 
 .btn:active{background-color: #808cc6!important; border-color: #808cc6!important; } 
 .btn:focus{outline: none !important;}
-
-
+a.btn.btn-dark.mt-3.button-nav {font-size: 10px;font-weight: bold;border:none;}
+a.btn.btn-dark.mt-3.button-nav:hover{color: #fff!important; background-color: #adb9f5;}
 /*********************
 **********************
 ******MUIS************
